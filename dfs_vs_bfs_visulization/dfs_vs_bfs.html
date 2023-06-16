@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DFS vs BFS</title>
+    <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col">
+            <h3>DFS (Blocks covered: <span id="number_of_blocks_covered_dfs">0</span>)</h3>
+            <div id="world_canvas_dfs">
+            </div>
+        </div>
+        <div class="col">
+            <h3>BFS (Blocks covered: <span id="number_of_blocks_covered_bfs">0</span>)</h3>
+            <div id="world_canvas_bfs">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <button class="button-30" role="button" id="playButton">Play</button>
+            &nbsp;
+            <button class="button-30" role="button" id="nextButton">Next</button>
+        </div>
+    </div>
+</body>
+<script>
+    let blockSize = 20
+    let worldSize = 20
+    let landColor = '#8b624c'
+    let waterColor = '#7ee0e0'
+    let blockBeingPushedIntoFrontierColor = '#FFFD37'
+    let blockToIgnoreColor = '#baadad'
+    let conqueredLandColor = '#50C878'
+</script>
+<script src="./drawWorldDFSvsBFS.js"></script>
+<script src="./dfsVsbfsAlgo.js"></script>
+</html>
